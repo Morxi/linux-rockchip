@@ -12,7 +12,7 @@
 #include <linux/iommu.h>
 #include <linux/iova.h>
 
-#include "rknpu_drv.h"
+// #include "rknpu_drv.h"
 
 struct rknpu_mm {
 	void *bitmap;

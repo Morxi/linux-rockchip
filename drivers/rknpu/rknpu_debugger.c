@@ -26,7 +26,7 @@
 
 #define RKNPU_DEBUGGER_ROOT_NAME "rknpu"
 
-#if defined(CONFIG_ROCKCHIP_RKNPU_DEBUG_FS) ||                                 \
+#if defined(CONFIG_ROCKCHIP_RKNPU_DEBUG_FS) || \
 	defined(CONFIG_ROCKCHIP_RKNPU_PROC_FS)
 static int rknpu_version_show(struct seq_file *m, void *data)
 {
