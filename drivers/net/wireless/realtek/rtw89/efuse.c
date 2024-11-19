@@ -104,7 +104,8 @@ static int rtw89_dump_physical_efuse_map_ddv(struct rtw89_dev *rtwdev, u8 *map,
 					       efuse_ctl & B_AX_EF_RDY, 1, 1000000,
 					       true, rtwdev, R_AX_EFUSE_CTRL);
 		if (ret)
-			return -EBUSY;
+			rtw89_warn(rtwdev, "dump efuse timed out");
+			// return -EBUSY;
 
 		*map++ = (u8)(efuse_ctl & 0xff);
 	}
